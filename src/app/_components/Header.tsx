@@ -40,6 +40,12 @@ const Header = () => {
           >
             About Us
           </a>
+          <a
+            href="/product"
+            className="text-gray-800 hover:text-primary transition"
+          >
+            Product
+          </a>
           <a href="#" className="text-gray-800 hover:text-primary transition">
             Vision and Mission
           </a>
