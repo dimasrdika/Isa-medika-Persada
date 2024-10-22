@@ -78,7 +78,7 @@ const Header = () => {
           <ul className="flex space-x-8">
             <li
               className="cursor-pointer hover:text-primary transition"
-              onClick={() => handleNavigation("/")}
+              onClick={() => handleNavigation("/#home")}
             >
               Home
             </li>
@@ -134,7 +134,7 @@ const Header = () => {
               <ul className="flex flex-col space-y-4 p-4">
                 <li
                   className="p-2 cursor-pointer hover:text-primary transition"
-                  onClick={() => handleNavigation("/")}
+                  onClick={() => handleNavigation("/#home")}
                 >
                   Home
                 </li>
