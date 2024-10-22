@@ -10,7 +10,7 @@ const Product: React.FC = () => {
   const [visibleProductCount, setVisibleProductCount] =
     useState(initialProductCount);
   const [loading, setLoading] = useState(true);
-  const [loadingMore, setLoadingMore] = useState(false); // State baru untuk loading tambahan
+  const [loadingMore, setLoadingMore] = useState(false);
 
   useEffect(() => {
     const fetchData = async () => {
@@ -23,7 +23,6 @@ const Product: React.FC = () => {
 
     fetchData();
   }, []);
-
   const products = [
     {
       name: "Earthen Bottle",
@@ -117,11 +116,22 @@ const Product: React.FC = () => {
   };
 
   const handleSeeMoreClick = async () => {
-    setLoadingMore(true); // Aktifkan loading saat melihat lebih banyak
-    await new Promise((resolve) => setTimeout(resolve, 2000)); // Simulasi loading
+    if (loadingMore) return;
+
+    setLoadingMore(true);
+    await new Promise((resolve) => setTimeout(resolve, 2000));
     setVisibleProductCount((prevCount) => prevCount + initialProductCount);
-    setLoadingMore(false); // Matikan loading setelah selesai
+    setLoadingMore(false);
   };
+
+  // Loading indicator
+  if (loading) {
+    return (
+      <div className="flex items-center justify-center h-screen">
+        <div className="animate-spin rounded-full h-32 w-32 border-t-2 border-primary border-t-primary"></div>
+      </div>
+    );
+  }
 
   return (
     <div>
