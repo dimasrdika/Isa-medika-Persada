@@ -60,7 +60,7 @@ const Header = () => {
           </li>
           <li
             className="cursor-pointer hover:text-primary transition"
-            onClick={() => navigateTo("/#vision-mission")}
+            onClick={() => navigateTo("/#vision")}
           >
             Vision and Mission
           </li>

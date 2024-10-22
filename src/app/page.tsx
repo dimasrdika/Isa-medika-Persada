@@ -5,6 +5,7 @@ import Header from "./_components/Header";
 import HeroSection from "./_components/Hero";
 import AboutUs from "./_components/AboutUs";
 import { useState, useEffect } from "react";
+import VisionMission from "./_components/VisionMission";
 export default function Home() {
   const [loading, setLoading] = useState(true);
 
@@ -33,6 +34,7 @@ export default function Home() {
 
       <HeroSection />
       <AboutUs />
+      <VisionMission />
     </div>
   );
 }
