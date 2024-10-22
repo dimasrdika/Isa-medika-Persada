@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Header from "../_components/Header";
 import ProductTag from "./producttag";
 import ProductCard from "./card";
@@ -9,6 +9,20 @@ const Product: React.FC = () => {
   const [tag, setTag] = useState("");
   const [visibleProductCount, setVisibleProductCount] =
     useState(initialProductCount);
+  const [loading, setLoading] = useState(true);
+  const [loadingMore, setLoadingMore] = useState(false); // State baru untuk loading tambahan
+
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        await new Promise((resolve) => setTimeout(resolve, 2000));
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    fetchData();
+  }, []);
 
   const products = [
     {
@@ -102,8 +116,11 @@ const Product: React.FC = () => {
     setVisibleProductCount(initialProductCount);
   };
 
-  const handleSeeMoreClick = () => {
+  const handleSeeMoreClick = async () => {
+    setLoadingMore(true); // Aktifkan loading saat melihat lebih banyak
+    await new Promise((resolve) => setTimeout(resolve, 2000)); // Simulasi loading
     setVisibleProductCount((prevCount) => prevCount + initialProductCount);
+    setLoadingMore(false); // Matikan loading setelah selesai
   };
 
   return (
@@ -136,19 +153,26 @@ const Product: React.FC = () => {
             ))}
           </div>
 
-          {filteredProducts.length < products.length && (
-            <div className="flex justify-center mt-4 mb-5">
-              <button
-                className="p-3 bg-primary hover:bg-green-800 transition-all duration-300 ease-in-out text-secondary rounded-full"
-                onClick={handleSeeMoreClick}
-              >
-                See More
-              </button>
+          {loadingMore ? (
+            <div className="flex items-center justify-center my-4">
+              <div className="animate-spin rounded-full h-16 w-16 border-t-2 border-primary border-t-primary"></div>
             </div>
+          ) : (
+            filteredProducts.length < products.length && (
+              <div className="flex justify-center mt-4 mb-5">
+                <button
+                  className="p-3 bg-primary hover:bg-green-800 transition-all duration-300 ease-in-out text-secondary rounded-full"
+                  onClick={handleSeeMoreClick}
+                >
+                  See More
+                </button>
+              </div>
+            )
           )}
         </div>
       </div>
     </div>
   );
 };
+
 export default Product;

@@ -10,7 +10,7 @@ interface ProductMenu {
 const ProductTag: React.FC<ProductMenu> = ({ name, onClick, isSelected }) => {
   const buttonStyles = isSelected
     ? "text-primary border-gray-800 transform scale-105"
-    : "text-primary bg-secondary hover:border-primary";
+    : "text-primary bg-secondary hover:bg-primary hover:text-secondary transition duration-300 ease-in-out";
 
   const containerStyles = isSelected
     ? "flex items-center justify-center"

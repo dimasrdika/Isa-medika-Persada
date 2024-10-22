@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const HeroSection = () => {
   return (
-    <div className="container mx-auto px-4 pt-40">
+    <div className="container mx-auto px-4 pt-40" id="home">
       <div className="flex flex-col lg:flex-row items-center">
         <div className="lg:w-1/2 lg:pr-12">
           <div className="text-sm font-medium text-gray-600 mb-4">
