@@ -3,11 +3,11 @@ import { useState } from "react";
 import classNames from "classnames";
 import Image from "next/image";
 import { RiMenu4Line, RiCloseCircleLine } from "react-icons/ri";
-import { useRouter } from "next/navigation"; // Ganti import jika perlu
+import { useRouter } from "next/navigation";
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const router = useRouter(); // Pastikan ini dipanggil di dalam komponen yang tepat
+  const router = useRouter();
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
@@ -15,7 +15,33 @@ const Header = () => {
 
   const navigateTo = (path: string) => {
     setIsOpen(false); // Menutup menu saat navigasi
-    router.push(path);
+
+    if (path.startsWith("#")) {
+      const targetElement = document.querySelector(path);
+      if (targetElement) {
+        targetElement.scrollIntoView({ behavior: "smooth" });
+      }
+    } else {
+      router.push(path);
+    }
+  };
+
+  const handleAboutClick = () => {
+    if (window.location.pathname === "/product") {
+      const targetElement = document.querySelector("#about");
+      if (targetElement) {
+        targetElement.scrollIntoView({ behavior: "smooth" });
+      }
+    } else {
+      router.push("/product");
+      // Menggunakan setTimeout untuk memberi waktu agar navigasi selesai
+      setTimeout(() => {
+        const targetElement = document.querySelector("#about");
+        if (targetElement) {
+          targetElement.scrollIntoView({ behavior: "smooth" });
+        }
+      }, 100); // Delay untuk memastikan navigasi selesai
+    }
   };
 
   return (
@@ -48,7 +74,7 @@ const Header = () => {
           </li>
           <li
             className="cursor-pointer hover:text-primary transition"
-            onClick={() => navigateTo("/#about")}
+            onClick={handleAboutClick}
           >
             About Us
           </li>
@@ -100,7 +126,7 @@ const Header = () => {
             </li>
             <li
               className="p-4 cursor-pointer hover:text-primary transition"
-              onClick={() => navigateTo("/#about-us")}
+              onClick={handleAboutClick}
             >
               About Us
             </li>
@@ -112,7 +138,7 @@ const Header = () => {
             </li>
             <li
               className="p-4 cursor-pointer hover:text-primary transition"
-              onClick={() => navigateTo("/#vision-mission")}
+              onClick={() => navigateTo("/#vision")}
             >
               Vision and Mission
             </li>
