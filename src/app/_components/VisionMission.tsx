@@ -38,39 +38,6 @@ const MissionVisionCulture = () => {
           </div>
         ))}
       </div>
-
-      <div className="sm:max-w-5xl pt-8 my-12 rounded-xl shadow-lg mx-4 sm:mx-8 md:mx-auto">
-        <h1 className="xl:text-4xl text-3xl text-center text-primary font-extrabold mb-10">
-          Our Pharmaceutical Partners
-        </h1>
-        <div className="flex flex-wrap justify-center items-center">
-          {[
-            "simex",
-            "promed",
-            "virtue",
-            "darya",
-            "mediafarma",
-            "indofarma",
-            "first",
-            "loyd",
-            "harsen",
-          ].map((customer) => (
-            <div
-              key={customer}
-              className="flex justify-center pb-8 items-center w-1/2 sm:w-1/3 md:w-1/3 lg:w-1/4 mx-2 transform hover:scale-75 transition duration-300 contrast-75 hover:contrast-100 drop-shadow-xl"
-            >
-              <Image
-                className="focus:outline-none h-20 object-contain"
-                src={`/customer/${customer}.png`}
-                width={300}
-                height={300}
-                alt={customer}
-                role="img"
-              />
-            </div>
-          ))}
-        </div>
-      </div>
     </div>
   );
 };
