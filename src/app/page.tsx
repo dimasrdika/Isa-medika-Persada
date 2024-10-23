@@ -1,5 +1,7 @@
 "use client";
 import Image from "next/image";
+// _app.tsx
+import "leaflet/dist/leaflet.css";
 
 import Header from "./_components/Header";
 import HeroSection from "./_components/Hero";
