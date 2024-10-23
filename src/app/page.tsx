@@ -7,6 +7,8 @@ import AboutUs from "./_components/AboutUs";
 import { useState, useEffect } from "react";
 import VisionMission from "./_components/VisionMission";
 import BusinessOperationsSection from "./_components/BusinessOperation";
+import Location from "./_components/Location";
+import Footer from "./_components/Footer";
 export default function Home() {
   const [loading, setLoading] = useState(true);
 
@@ -37,6 +39,8 @@ export default function Home() {
       <AboutUs />
       <VisionMission />
       <BusinessOperationsSection />
+      <Location />
+      <Footer />
     </div>
   );
 }

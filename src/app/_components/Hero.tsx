@@ -20,17 +20,12 @@ const HeroSection = () => {
             <a href="#about"> Read More</a>
           </button>
           <button className="text-gray-700 px-4 py-2 rounded-full font-medium border border-gray-300 hover:bg-primary hover:text-white transition duration-300">
-            Contact Us
+            <a href="#location">Contact Us</a>
           </button>
         </div>
       </div>
 
       <div className="sm:max-w-5xl pt-8 my-12 rounded-xl shadow-lg mx-4 sm:mx-8 md:mx-auto">
-        <div className="w-11/12 sm:w-2/3 mx-auto mb-10">
-          <h1 className="focus:outline-none xl:text-4xl text-3xl text-center text-primary font-extrabold">
-            Our Pharmaceutical Partners
-          </h1>
-        </div>
         <div className="sm:py-6 px-8 flex flex-wrap justify-center items-center">
           {["amarox", "actavis", "triman", "eisai", "agroveta", "nova"].map(
             (customer) => (
