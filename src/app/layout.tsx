@@ -26,6 +26,7 @@ export default function RootLayout({
           href="https://fonts.gstatic.com"
           crossOrigin="anonymous"
         />
+        <link rel="icon" href="/logo.svg" type="image/svg+xml" />{" "}
       </head>
 
       <body className={`${notoSansFont.variable} antialiased`}>{children}</body>
