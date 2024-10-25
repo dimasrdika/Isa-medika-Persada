@@ -19,7 +19,7 @@ const HeroSection = () => {
           <button className="bg-primary text-white px-4 py-2 rounded-full font-medium hover:bg-gray-700 transition duration-300">
             <a href="#about"> Read More</a>
           </button>
-          <button className="text-gray-700 px-4 py-2 rounded-full font-medium border border-gray-300 hover:bg-primary hover:text-white transition duration-300">
+          <button className="bg-primary text-white px-4 py-2 rounded-full font-medium hover:bg-gray-700 transition duration-300">
             <a href="#location">Contact Us</a>
           </button>
         </div>
