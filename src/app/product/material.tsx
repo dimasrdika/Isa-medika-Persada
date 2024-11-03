@@ -36,24 +36,6 @@ const products = [
 ];
 
 const Material = () => {
-  const [loading, setLoading] = useState(true);
-
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      setLoading(false);
-    }, 2000);
-
-    return () => clearTimeout(timer);
-  }, []);
-
-  if (loading) {
-    return (
-      <div className="flex items-center justify-center h-screen">
-        <div className="animate-spin rounded-full h-32 w-32 border-t-2 border-primary border-t-primary"></div>
-      </div>
-    );
-  }
-
   const settings = {
     infinite: true,
     dots: true,
