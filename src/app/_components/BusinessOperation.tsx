@@ -63,7 +63,7 @@ const BusinessOperationsSection = () => {
         </div>
       </div>
       <div className="sm:max-w-5xl pt-8 my-12 rounded-xl shadow-lg mx-4 sm:mx-8 md:mx-auto">
-        <h1 className="xl:text-4xl text-3xl text-center text-primary font-extrabold mb-10">
+        <h1 className="xl:text-4xl text-3xl text-center text-primary font-bold mb-10">
           Our Pharmaceutical Partners
         </h1>
         <div className="sm:py-6 px-8 flex flex-wrap justify-center items-center">
@@ -101,7 +101,7 @@ const BusinessOperationsSection = () => {
         </div>
       </div>
       <div className="sm:max-w-5xl pt-8 my-12 rounded-xl shadow-lg mx-4 sm:mx-8 md:mx-auto">
-        <h1 className="xl:text-4xl text-3xl text-center text-primary font-extrabold mb-10">
+        <h1 className="xl:text-4xl text-3xl text-center text-primary font-bold mb-10">
           Our Medical Device Customers
         </h1>
         <div className="sm:py-6 px-8 flex flex-wrap justify-center items-center">
@@ -133,7 +133,7 @@ const BusinessOperationsSection = () => {
         </div>
       </div>
       <div className="sm:max-w-5xl pt-8 my-12 rounded-xl shadow-lg mx-4 sm:mx-8 md:mx-auto">
-        <h1 className="xl:text-4xl text-3xl text-center text-primary font-extrabold mb-10">
+        <h1 className="xl:text-4xl text-3xl text-center text-primary font-bold mb-10">
           Our Food Customer
         </h1>
         <div className="sm:py-6 px-8 flex flex-wrap justify-center items-center">

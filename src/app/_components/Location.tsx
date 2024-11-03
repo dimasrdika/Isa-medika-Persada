@@ -37,7 +37,7 @@ const Location: React.FC = () => {
     <section className="py-24" id="location">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="max-w-2xl lg:max-w-4xl mx-auto text-center">
-          <h2 className="text-3xl font-extrabold text-primary">Location</h2>
+          <h2 className="text-3xl font-bold text-primary">Location</h2>
           <p className="mt-4 text-lg text-gray-500">
             Find us at our Head Office and Warehouse
           </p>
