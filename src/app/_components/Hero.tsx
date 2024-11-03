@@ -24,45 +24,6 @@ const HeroSection = () => {
           </button>
         </div>
       </div>
-
-      <div className="sm:max-w-5xl pt-8 my-12 rounded-xl shadow-lg mx-4 sm:mx-8 md:mx-auto">
-        <h1 className="xl:text-4xl text-3xl text-center text-primary font-extrabold mb-10">
-          Our Pharmaceutical Partners
-        </h1>
-        <div className="sm:py-6 px-8 flex flex-wrap justify-center items-center">
-          {[
-            "amarox",
-            "actavis",
-            "triman",
-            "eisai",
-            "agroveta",
-            "nova",
-            "simex",
-            "promed",
-            "virtue",
-            "darya",
-            "mediafarma",
-            "indofarma",
-            "first",
-            "loyd",
-            "harsen",
-          ].map((customer) => (
-            <div
-              key={customer}
-              className="w-1/3 sm:w-1/6 flex justify-center pb-8 items-center inset-0 transform hover:scale-75 transition duration-300 contrast-75 hover:contrast-100 drop-shadow-xl"
-            >
-              <Image
-                className="focus:outline-none w-32 sm:w-32"
-                src={`/customer/${customer}.png`}
-                width={300}
-                height={300}
-                alt={customer}
-                role="img"
-              />
-            </div>
-          ))}
-        </div>
-      </div>
     </div>
   );
 };

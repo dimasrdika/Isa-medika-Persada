@@ -18,16 +18,15 @@ const AboutUs = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-6">
           <div className="flex justify-center">
             <Image
-              src="/aboutus.svg" // Ganti dengan URL gambarmu
-              width={400} // Atur ukuran sesuai kebutuhan
-              height={400} // Atur ukuran agar lebih tinggi
-              layout="cover" // Menggunakan layout responsif
+              src="/aboutus.svg"
+              width={400}
+              height={400}
+              layout="cover"
               alt="Team Collaboration"
-              className="rounded-xl shadow-lg object-cover h-full" // Menjaga rasio gambar
+              className="rounded-xl shadow-lg object-cover h-full"
             />
           </div>
 
-          {/* Right: Text */}
           <div className="md:pl-8">
             <p className="text-gray-500 mb-4">
               PT Isa Medika Persada (Isa-Med) is a sister company of PT.
