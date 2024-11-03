@@ -92,7 +92,7 @@ const Device = () => {
         </div>
         <div className="my-16 py-20 max-w-4xl mx-auto">
           <h2 className="text-3xl font-bold text-primary mb-6 text-center">
-            Key Points
+            Other Pharmaceutical Raw Materials
           </h2>
           <ul className="list-disc list-inside text-lg text-gray-800 space-y-4 mt-4">
             <li>
@@ -141,11 +141,11 @@ const Device = () => {
             </li>
             <li>
               <span className="font-semibold text-primary text-lg">
-                Pharmaceutical & Cosmetic Packaging:
+                Other’s Food Ingredien
               </span>{" "}
               <span className="text-gray-700">
-                Pharmaceutical Bottles, Amber Glass, Oral Droppers, Ampoules &
-                Vials, PVC and Foil Packaging
+                Spray dry instant coffee, matcha extract, creamer, glycerin USP
+                99,Tapioca Flour , Chocolate Powder, etc
               </span>
             </li>
           </ul>

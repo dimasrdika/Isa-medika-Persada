@@ -27,9 +27,12 @@ const Product = () => {
   return (
     <>
       <Header />
-      <h1 className="text-center pt-24 text-4xl font-bold mb-8 text-primary">
-        Our Products
-      </h1>
+      <div className="pt-28">
+        <div className="bg-primary text-white p-4 mx-auto w-max text-center">
+          <h1 className="text-4xl font-bold mb-0">Our Products</h1>
+        </div>
+      </div>
+
       <Material />
       <Device />
     </>
