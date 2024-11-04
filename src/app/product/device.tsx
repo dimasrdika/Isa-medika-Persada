@@ -139,13 +139,61 @@ const Device = () => {
                 Vitamin B12, C, D, Calcium carbonate
               </span>
             </li>
+          </ul>
+        </div>
+        <div className="my-16 py-20 max-w-4xl mx-auto">
+          <h2 className="text-3xl font-bold text-primary mb-6 text-center">
+            Other Food and Cosmetic Ingredients
+          </h2>
+          <ul className="list-disc list-inside text-lg text-gray-800 space-y-4 mt-4">
             <li>
               <span className="font-semibold text-primary text-lg">
-                Other’s Food Ingredien
+                SWEETENERS:
               </span>{" "}
               <span className="text-gray-700">
-                Spray dry instant coffee, matcha extract, creamer, glycerin USP
-                99,Tapioca Flour , Chocolate Powder, etc
+                Sorbitol Powder, Maltitol Powder, Xylitol Powder
+              </span>
+            </li>
+            <li>
+              <span className="font-semibold text-primary text-lg">
+                PROTEINS:
+              </span>{" "}
+              <span className="text-gray-700">
+                Whey Protein Isolate 90, Whey Protein Concentrate 80, Milk
+                Protein Concentrate, Clear Whey Powder
+              </span>
+            </li>
+            <li>
+              <span className="font-semibold text-primary text-lg">
+                FLAVORS:
+              </span>{" "}
+              <span className="text-gray-700">Flavor Liquid and Powder</span>
+            </li>
+            <li>
+              <span className="font-semibold text-primary text-lg">
+                NATURAL PLANT AND HERBS EXTRACT:
+              </span>{" "}
+              <span className="text-gray-700">
+                Fruit and Vegetables Extract, Natural Sweetener, Man Health
+                Fruit Powders, Animal Nutrition
+              </span>
+            </li>
+            <li>
+              <span className="font-semibold text-primary text-lg">
+                OTHER FOOD INGREDIENTS:
+              </span>{" "}
+              <span className="text-gray-700">
+                Spray Dry Instant Coffee, Matcha Extract, Creamer, Glycerin USP
+                99, Tapioca Flour, Chocolate Powder, etc.
+              </span>
+            </li>
+            <li>
+              <span className="font-semibold text-primary text-lg">
+                COSMETICS AND PERSONAL CARE INGREDIENTS:
+              </span>{" "}
+              <span className="text-gray-700">
+                Natural Extract for Cosmetics and Personal Care, Anti-Oxidant,
+                Glycerin
               </span>
             </li>
           </ul>

@@ -50,7 +50,7 @@ const Material = () => {
     <>
       <div className="pt-6">
         <h1 className="text-4xl mb-4 font-bold text-primary text-center">
-          Pharmaceutical Raw Materials
+          Pharmametric Packaging
         </h1>
         <div className="max-w-4xl mx-auto">
           <Slider {...settings}>
