@@ -65,8 +65,8 @@ const Device = () => {
 
   return (
     <>
-      <div className="my-20 pt-16">
-        <h1 className="text-4xl mb-4 font-bold text-primary text-center">
+      <div className="my-20 pt-16 px-4 sm:px-6 lg:px-8">
+        <h1 className="text-5xl mb-6 font-extrabold text-primary text-center tracking-tight leading-tight">
           Medical Device
         </h1>
         <div className="max-w-4xl mx-auto">
@@ -83,18 +83,19 @@ const Device = () => {
                     className="h-full w-auto object-contain rounded-lg shadow-md mb-4"
                   />
                 </div>
-                <h2 className="mt-4 text-2xl font-semibold text-primary text-center">
+                <h2 className="mt-4 text-3xl font-semibold text-primary text-center leading-snug">
                   {product.title}
                 </h2>
               </div>
             ))}
           </Slider>
         </div>
+
         <div className="my-16 py-20 max-w-4xl mx-auto">
-          <h2 className="text-3xl font-bold text-primary mb-6 text-center">
+          <h2 className="text-4xl font-bold text-primary mb-6 text-center leading-snug">
             Other Pharmaceutical Raw Materials
           </h2>
-          <ul className="list-disc list-inside text-lg text-gray-800 space-y-4 mt-4">
+          <ul className="list-disc list-inside text-md text-gray-800 space-y-2 mt-4">
             <li>
               <span className="font-semibold text-primary text-lg">
                 NSAIDS:
@@ -141,11 +142,12 @@ const Device = () => {
             </li>
           </ul>
         </div>
+
         <div className="my-16 py-20 max-w-4xl mx-auto">
-          <h2 className="text-3xl font-bold text-primary mb-6 text-center">
+          <h2 className="text-4xl font-bold text-primary mb-6 text-center leading-snug">
             Other Food and Cosmetic Ingredients
           </h2>
-          <ul className="list-disc list-inside text-lg text-gray-800 space-y-4 mt-4">
+          <ul className="list-disc list-inside text-md text-gray-800 space-y-2 mt-4">
             <li>
               <span className="font-semibold text-primary text-lg">
                 SWEETENERS:
