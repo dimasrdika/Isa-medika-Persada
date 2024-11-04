@@ -29,7 +29,7 @@ export default function Home() {
 
   const handleScroll = () => {
     const currentScroll = window.scrollY;
-    setShowScroll(currentScroll > 200); // Show button after scrolling 200px
+    setShowScroll(currentScroll > 200);
   };
 
   useEffect(() => {

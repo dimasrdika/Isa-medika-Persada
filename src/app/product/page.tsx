@@ -28,7 +28,7 @@ const Product = () => {
     <>
       <Header />
       <div className="pt-28">
-        <div className="bg-primary text-white p-4 mx-auto w-max text-center">
+        <div className="bg-primary text-white p-4 mx-auto rounded-xl w-max text-center">
           <h1 className="text-4xl font-bold mb-0">Our Products</h1>
         </div>
       </div>
