@@ -17,9 +17,8 @@ const LocationInfo = () => {
 
       <div className="border-t border-gray-200 mt-4 pt-4">
         <h3 className="text-lg font-semibold text-primary">Hours</h3>
-        <p className="mt-1 text-gray-600">Monday - Friday: 9am - 5pm</p>
-        <p className="mt-1 text-gray-600">Saturday: 10am - 4pm</p>
-        <p className="mt-1 text-gray-600">Sunday: Closed</p>
+        <p className="mt-1 text-gray-600">Monday - Friday: 8:30 am - 5:30 pm</p>
+        <p className="mt-1 text-gray-600">Saturday - Sunday: Closed</p>
       </div>
 
       <div className="border-t border-gray-200 mt-4 pt-4">

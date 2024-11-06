@@ -50,6 +50,42 @@ const products = [
     title: "Kasa Hidrophile X-Ray",
     img: "/products/medical-device/kasa-hidrophile-xray.png",
   },
+  {
+    title: "Kasa 5 x 12",
+    img: "/products/medical-device/kasa5x12.jpeg",
+  },
+  {
+    title: "Kasa 10 x 10",
+    img: "/products/medical-device/kasa10x10.jpeg",
+  },
+  {
+    title: "Kasa 5 x 5",
+    img: "/products/medical-device/kasa5x5.jpeg",
+  },
+  {
+    title: "Kasa X ray  10 x 10",
+    img: "/products/medical-device/kasaxray10x10.jpeg",
+  },
+  {
+    title: "Pouches isi 10 kasa 10 x 10 + indikator",
+    img: "/products/medical-device/pouch10kasa10x10.jpeg",
+  },
+  {
+    title: "Pouches isi 5 kasa 10 x 10",
+    img: "/products/medical-device/pouches5kasa10x10.jpeg",
+  },
+  {
+    title: "Pouches isi 30 kasa 5 x 5",
+    img: "/products/medical-device/pouches30kasa5x5.jpeg",
+  },
+  {
+    title: "Pouches isi 10 kasa xray 10 x 10 +indikator",
+    img: "/products/medical-device/pouches10kasaxray10x10.jpeg",
+  },
+  {
+    title: "Kasa 7,5 x 7,5",
+    img: "/products/medical-device/kasa75x75.jpeg",
+  },
 ];
 
 const Device = () => {

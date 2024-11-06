@@ -90,16 +90,17 @@ const Header = () => {
             </li>
             <li
               className="cursor-pointer hover:text-primary transition"
-              onClick={() => handleNavigation("/product")}
-            >
-              Product
-            </li>
-            <li
-              className="cursor-pointer hover:text-primary transition"
               onClick={() => handleNavigation("#vision")}
             >
               Vision and Mission
             </li>
+            <li
+              className="cursor-pointer hover:text-primary transition"
+              onClick={() => handleNavigation("/product")}
+            >
+              Product
+            </li>
+
             <li
               className="cursor-pointer hover:text-primary transition"
               onClick={() => handleNavigation("#location")}
@@ -146,16 +147,17 @@ const Header = () => {
                 </li>
                 <li
                   className="p-2 cursor-pointer hover:text-primary transition"
-                  onClick={() => handleNavigation("/product")}
-                >
-                  Product
-                </li>
-                <li
-                  className="p-2 cursor-pointer hover:text-primary transition"
                   onClick={() => handleNavigation("#vision")}
                 >
                   Vision and Mission
                 </li>
+                <li
+                  className="p-2 cursor-pointer hover:text-primary transition"
+                  onClick={() => handleNavigation("/product")}
+                >
+                  Product
+                </li>
+
                 <li
                   className="p-2 cursor-pointer hover:text-primary transition"
                   onClick={() => handleNavigation("#location")}
